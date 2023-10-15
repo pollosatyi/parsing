@@ -14,6 +14,7 @@ namespace parsing
             var cells = document.QuerySelectorAll(cellSelector);
             var titles = cells.Select(m => m.TextContent);
 
+
             foreach( var title in titles )
             {
                 Console.WriteLine(title);
