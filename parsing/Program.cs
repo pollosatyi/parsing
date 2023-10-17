@@ -24,7 +24,7 @@ namespace parsing
                         ParseClass wikipediaSecond = new ParseClass();
                         wikipediaSecond._nameSite = "Википедия 2";
                         wikipediaSecond._address = "https://en.wikipedia.org/wiki/List_of_The_Big_Bang_Theory_episodes";
-                        wikipediaSecond._cellSelector = "html";
+                        wikipediaSecond._cellSelector = "td.colspan=";
                         wikipediaSecond.FunctionParsing(wikipediaSecond);
 
                         break;
