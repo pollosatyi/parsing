@@ -14,9 +14,10 @@ namespace parsing
                 switch (NumberOfSiteSelection)
                 {
                     case 0:
-                        ParseClass wikipedia = new ParseClass("Википедия",
-                            "https://en.wikipedia.org/wiki/List_of_The_Big_Bang_Theory_episodes",
-                            "tr.vevent td:nth-child(3)");
+                        ParseClass wikipedia = new ParseClass();
+                        wikipedia._nameSite = "Википедия";
+                        wikipedia._address = "https://en.wikipedia.org/wiki/List_of_The_Big_Bang_Theory_episodes";
+                        wikipedia._cellSelector = "tr.vevent td:nth-child(3)";
                         wikipedia.FunctionParsing(wikipedia);
                         break;
                     case 1:

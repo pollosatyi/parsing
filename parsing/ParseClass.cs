@@ -15,11 +15,9 @@ namespace parsing
 
         public string _cellSelector { get; set; }
 
-        public ParseClass(string name, string address, string cellSelector)
+        public ParseClass()
         {
-            _nameSite = name;
-            _address = address;
-            _cellSelector = cellSelector;
+            
         }
 
         public async Task FunctionParsing(ParseClass site)
