@@ -22,7 +22,7 @@ namespace parsing
 
         public async Task FunctionParsing(ParseClass site)
         {
-            Console.WriteLine(site._nameSite);
+            Console.WriteLine($"Данные с сайта: {site._nameSite}");
             var config = Configuration.Default.WithDefaultLoader();
             var context = BrowsingContext.New(config);
 
