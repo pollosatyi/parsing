@@ -9,7 +9,6 @@ namespace parsing
 
             while (true)
             {
-
                 Console.WriteLine("Введите название сайта для парсинга");
                 ParseClass parseClass = new ParseClass();
                 parseClass._nameSite = Console.ReadLine();
