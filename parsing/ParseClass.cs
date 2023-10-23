@@ -15,12 +15,6 @@ namespace parsing
 
         public string _cellSelector { get; set; }
 
-        public ParseClass()
-        {
-            
-        }
-
-       
     }
 
 

@@ -12,9 +12,10 @@ namespace parsing
     {
         private const string PATH = "C:\\Parsing\\parsing.json";
         public string _title { get; set; }
-        public ParsingJsonClass(string title) {
+        public ParsingJsonClass(string title)
+        {
             _title = title;
-            
+
         }
         public void CreateJson(ParsingJsonClass parsingJsonClass)
         {
