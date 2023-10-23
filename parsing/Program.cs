@@ -2,9 +2,9 @@
 
 namespace parsing
 {
-    internal class Program
+    public class Program
     {
-        static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
 
             while (true)
@@ -14,11 +14,11 @@ namespace parsing
                 Console.WriteLine("Введите название сайта для парсинга");
                 ParseClass parseClass = new ParseClass();
                 //ParsingService parsingService = new ParsingService();
-                parseClass._nameSite = Console.ReadLine();
+                parseClass._nameSite = "qq"; //Console.ReadLine();
                 Console.WriteLine("Введите адрес сайта");
-                parseClass._address = Console.ReadLine();
+                parseClass._address = "https://en.wikipedia.org/wiki/List_of_The_Big_Bang_Theory_episodes";//Console.ReadLine();
                 Console.WriteLine("Введите псевдокласс CSS");
-                parseClass._cellSelector = Console.ReadLine();
+                parseClass._cellSelector = "tr.vevent td:nth-child(3)"; //Console.ReadLine();
                 if (parseClass._nameSite.Equals(null) || parseClass._address.Equals(null) || parseClass._cellSelector.Equals(null))
                 {
                     Console.WriteLine("Неверный ввод данных");
@@ -39,7 +39,9 @@ namespace parsing
                             Console.WriteLine($"Данные с сайта: {parseClass._nameSite}");
                             ParsingService.ReadTitle(parseClass);
                             break;
-                            //case 1:
+                            case 1:
+                            ParsingService.WriteTitle(parseClass);
+                            break;
 
                     }
                 }
@@ -48,7 +50,7 @@ namespace parsing
                     Console.WriteLine("Неверный ввод команды");
                     continue;
                 }
-                ParsingService.ReadTitle(parseClass);
+              
 
 
                 //int NumberOfSiteSelection = int.Parse(Console.ReadLine());
