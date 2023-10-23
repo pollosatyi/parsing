@@ -20,22 +20,7 @@ namespace parsing
             
         }
 
-        public async Task FunctionParsing(ParseClass site)
-        {
-            Console.WriteLine($"Данные с сайта: {site._nameSite}");
-            var config = Configuration.Default.WithDefaultLoader();
-            var context = BrowsingContext.New(config);
-
-            var document = await context.OpenAsync(site._address);
-            var cells = document.QuerySelectorAll(site._cellSelector);
-            var titles = cells.Select(m => m.TextContent);
-
-            foreach (var title in titles)
-            {
-                Console.WriteLine(title);
-            }
-
-        }
+       
     }
 
 
