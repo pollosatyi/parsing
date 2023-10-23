@@ -28,7 +28,6 @@ namespace parsing
                     parsingJsonClasses = JsonSerializer.Deserialize<List<ParsingJsonClass>>(fs);
                 }
             }
-
             parsingJsonClasses.Add(parsingJsonClass);
             Write(parsingJsonClasses);
         }
