@@ -1,0 +1,3 @@
+"https://en.wikipedia.org/wiki/List_of_The_Big_Bang_Theory_episodes"
+
+"tr.vevent td:nth-child(3)"
